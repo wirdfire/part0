@@ -1,0 +1,11 @@
+sequenceDiagram
+Browser->>+Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note 
+Server->>+Browser: HTTPS Status Code 302
+Browser-->>-Server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+Server->>+Browser: HTML Document
+Browser-->>-Server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Server->>+Browser: the css file
+Browser-->>-Server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+Server->>+Browser: the JavaScript file
+Browser-->>-Server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Server->>+Browser:   [{"content": "qqwweerrty","date": "2024-08-12T04:01:59.873Z"}]
