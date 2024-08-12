@@ -1,0 +1,9 @@
+sequenceDiagram
+Browser->>+Server: GET https://studies.cs.helsinki.fi/exampleapp/spa
+Server->>+Browser: HTML-CODE
+Browser-->>-Server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Server->>+Browser: THE CSS FILE
+Browser-->>-Server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+Server->>+Browser: THE JAVASCRIPT FILE
+Browser-->>-Server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Server->>+Browser:  [{"content": "Mamona","date": "2024-08-12T11:26:29.944Z"}]
